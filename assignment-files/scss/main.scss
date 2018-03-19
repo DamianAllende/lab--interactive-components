@@ -5,14 +5,119 @@
 body{
   font-family: sans-serif;
 }
-*{ box-sizing: border-box }
 
-img {
-   width: 100%;
-   display: block;
+*{ box-sizing: border-box ;
+	margin: 0px;
+	padding: 0px;
+   
 }
+
+
 
 #app-container{
-  max-width: 800px;
+  width: 800px;
+  height: auto;
   margin: 0 auto;
+
 }
+
+
+/******************************************/
+
+.app{
+
+	width: 500px;
+	height: auto;
+	margin: 0px auto;
+
+
+	&__list{
+
+		width: 500px;
+		height: 70px;
+		list-style: none;
+		text-align: center;
+		line-height: 70px;
+		display: flex;
+	}
+		
+
+		&__menu{
+			width: 250px;
+			height: 70px;
+			display: inline;
+			color: #ffffff;
+			background-color: #209cd6;
+			flex-grow: 1;
+			border-right: solid 1px #ffffff;	
+			
+		}
+
+		&__menu:last-of-type {
+		
+			border-right:none;	
+			
+		}
+
+		.activado{
+				background-color: red;
+				width: 250px;
+				height: 70px;
+				flex-grow: 1;
+				background: #ca0062;
+			}
+		.inactivo{
+			background-color: red;
+		}
+
+		&__container{
+			width: 100%;
+			height: auto;
+			position: absolute;
+			left: -3000px;
+		}
+
+		.container__activo{
+			position: relative;
+			left: 0px;
+			border: solid 1px #000000;
+			padding: 10px;
+			border-top: none;
+		}
+
+	&__title{
+		margin: 20px 0px;
+	}
+
+	&__text{
+		line-height:25px;
+		margin-bottom: 20px;
+	}
+
+	&__footer{
+		margin-top: 30px;
+		font-size: 13px;
+	}
+
+	&__list__item{
+		line-height:30px;
+		margin-left: 40px;
+
+	}
+
+
+	&__read{
+		line-height: 50px;
+	}
+		
+
+
+	}
+
+	
+
+
+
+
+
+

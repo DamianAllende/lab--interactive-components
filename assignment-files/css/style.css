@@ -605,66 +605,16 @@ body {
   font-family: sans-serif; }
 
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px; }
+  box-sizing: border-box; }
+
+img {
+  width: 100%;
+  display: block; }
 
 #app-container {
-  width: 800px;
-  height: auto;
+  max-width: 800px;
   margin: 0 auto; }
 
 /******************************************/
-.app {
-  width: 500px;
-  height: auto;
-  margin: 0px auto; }
-  .app__list {
-    width: 500px;
-    height: 70px;
-    list-style: none;
-    text-align: center;
-    line-height: 70px;
-    display: flex; }
-  .app__menu {
-    width: 250px;
-    height: 70px;
-    display: inline;
-    color: #ffffff;
-    background-color: #209cd6;
-    flex-grow: 1;
-    border-right: solid 1px #ffffff; }
-  .app__menu:last-of-type {
-    border-right: none; }
-  .app .activado {
-    background-color: red;
-    width: 250px;
-    height: 70px;
-    flex-grow: 1;
-    background: #ca0062; }
-  .app .inactivo {
-    background-color: red; }
-  .app__container {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: -3000px; }
-  .app .container__activo {
-    position: relative;
-    left: 0px;
-    border: solid 1px #000000;
-    padding: 10px;
-    border-top: none; }
-  .app__title {
-    margin: 20px 0px; }
-  .app__text {
-    line-height: 25px;
-    margin-bottom: 20px; }
-  .app__footer {
-    margin-top: 30px;
-    font-size: 13px; }
-  .app__list__item {
-    line-height: 30px;
-    margin-left: 40px; }
-  .app__read {
-    line-height: 50px; }
+.app ul {
+  background-color: red; }
